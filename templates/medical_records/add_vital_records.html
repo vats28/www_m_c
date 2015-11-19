@@ -1,0 +1,33 @@
+<ion-view view-title="{{ app_data.title }}">
+  <ion-content class="page-bg-color" ng-controller="mediRecCtrl">
+
+      <div class="card list" >
+
+          <label class="item item-input item-select">
+              <div class="input-label">
+                  Vital Type
+              </div>
+              <select>
+                  <option>Blue</option>
+                  <option selected>Green</option>
+                  <option>Red</option>
+              </select>
+          </label>
+
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">Reading</span>
+              <input type="text" placeholder="Enter your name">
+          </label>
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">Other Info</span>
+              <input type="text" placeholder="Date of birth">
+          </label>
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">Remarks</span>
+              <input type="text" placeholder="Date of birth">
+          </label>
+      </div>
+
+      <div class="list"></div>
+  </ion-content>
+</ion-view>

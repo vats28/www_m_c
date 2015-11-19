@@ -1,0 +1,92 @@
+<ion-view view-title="{{ app_data.title }}">
+  <ion-content class="page-bg-color" ng-controller="listLovedCtrl">
+      <!-- header section start here -->
+      <div class="item item-avatar">
+          <img src="img/hritik.jpg">
+          <h2>Ravi</h2>
+          <p>Age <span>24</span>, Sex <span>Male</span></p>
+          <p>1MedKey</p>
+
+          <!--<p>
+            <a href="#" class="subdued">Health Status Update</a>
+          </p>-->
+      </div>
+
+      <div class="item tabs tabs-secondary  stable-bg tabs-icon-top">
+          <a class="tab-item" href="#">
+              <i class="icon ion-calendar" ng-click="jumpTo('app.calendar_events')"></i>
+              Calender
+          </a>
+          <a class="tab-item" ng-click="jumpTo('app.list_loved_ones')">
+              <i class="icon ion-heart"></i>
+              Loved ones
+          </a>
+          <a class="tab-item" href="#">
+              <i class="icon ion-android-playstore"></i>
+              Store
+          </a>
+          <a class="tab-item" href="#">
+              <i class="icon ion-cash"></i>
+              Bills
+          </a>
+      </div>
+
+      <!-- header section end here -->
+
+
+
+
+      <div class="row" style=" border-bottom: solid #A4A4A4 4px;  ">
+          <div class="col">
+              <a class="button button-small button-block icon-left ion-plus" ng-click="jumpTo('app.add_loved_ones')">
+                  Add Profile
+              </a>
+          </div>
+          <div class="col">
+              <a class="button button-small button-block icon-left ion-pull-request">
+                  Request Pending
+              </a>
+          </div>
+      </div>
+
+
+      <div class="card" ng-repeat="item in array_list_lovedones " item="item">
+          <div class="item item-avatar item-text-wrap">
+              <img src="{{ item.image }}">
+
+
+              <div class="row">
+                  <div class="col">
+                      <h2 ng-bind="item.name">Aish Gupta</h2>
+                      <p><span ng-bind="item.age">24</span>/<span ng-bind="item.sex">F</span></p>
+                      <p ng-bind="item.relation">Daughter</p>
+                  </div>
+                  <div class="col">
+                      <i class="icon ion-email positive"></i> ...
+                      <i class="icon ion-ios-telephone assertive"></i>
+                      <p>Last Status: <span ng-bind="item.last">01/04/15 - Dr.Mala</span></p>
+                      <p>Next: <span ng-bind="item.next">01/04/15 - ECG</span></p>
+                  </div>
+              </div>
+
+          </div>
+
+
+          <div class="item tabs item-text-wrap tabs-secondary  stable-bg tabs-icon-top">
+              <div class="" style="padding-left:10px;">
+                  <i class="icon ion-plus"></i>
+                  <span ng-bind="item.drug">BP-1/7-90/100 | BG-1/5-145</span>
+
+              </div>
+              <a class="tab-item" href="#">
+                  <i class="icon ion-ios-paper"></i>
+                  Medicine Chart
+              </a>
+          </div>
+
+      </div>
+
+
+      <div class="list"></div>
+  </ion-content>
+</ion-view>

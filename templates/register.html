@@ -1,0 +1,68 @@
+
+<ion-modal-view >
+    <ion-header-bar>
+        <div class="button button-clear button-assertive">Save</div>
+        <h1 class="title">Registration</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeRegisterModal()">Close</button>
+        </div>
+    </ion-header-bar >
+  <ion-content ><!--ng-init="init()"  ng-controller="registerCtrl"-->
+      <div id="content" >
+
+          <div id="profile-info">
+              <img id='profile-image' src="img/add_profile_pic.jpg"  style="height: 120px; width: 120px">
+
+          </div>
+      </div>
+
+        <div class="card list" >
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">Name</span>
+              <input ng-model="reg.name" type="text" placeholder="Enter your name">
+          </label>
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">DOB</span>
+              <input ng-model="reg.dob"  type="date" placeholder="Date of birth">
+          </label>
+
+          <div class="item ">
+              <div class="row">
+                  <div class="col">
+                      Sex
+                      <!--<table>
+                          <tr>
+                              <td style="padding-right: 5px; vertical-align: middle">Sex</td>
+                              <td style="display: none;"><input type="date"   placeholder="eg. 25/01/2015"></td>
+                          </tr>
+                      </table>-->
+                  </div>
+                  <div class="col">
+                      <div  >
+                          <input type="radio" ng-model="reg.gender" name="sex" value="1st half"> Male
+                          &nbsp;&nbsp;&nbsp;
+                          <input type="radio" ng-model="reg.gender" name="sex" value="2nd half"> Female
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">Email</span>
+              <input ng-model="reg.email" type="email" placeholder="Enter your email">
+          </label>
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">Password</span>
+              <input ng-model="reg.pass" type="password" placeholder="Enter password">
+          </label>
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">Verify Password</span>
+              <input ng-model="reg.cfm_pass" type="password" placeholder="Enter password">
+          </label>
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">Mobile/Phone</span>
+              <input ng-model="reg.phone" type="tel" placeholder="Mobile/Phone">
+          </label>
+      </div>
+  </ion-content>
+
+</ion-modal-view>

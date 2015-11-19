@@ -1,0 +1,111 @@
+<ion-view view-title="{{ app_data.title }}">
+  <ion-content class="page-bg-color" ng-controller="addLovedCtrl">
+      <!-- header section start here -->
+      <div class="item item-avatar">
+          <img src="img/hritik.jpg">
+          <h2>Ravi</h2>
+          <p>Age <span>24</span>, Sex <span>Male</span></p>
+          <p>1MedKey</p>
+
+          <!--<p>
+            <a href="#" class="subdued">Health Status Update</a>
+          </p>-->
+      </div>
+
+
+      <div class="item tabs tabs-secondary  stable-bg tabs-icon-top">
+          <a class="tab-item" href="#">
+              <i class="icon ion-calendar" ng-click="jumpTo('app.calendar_events')"></i>
+              Calender
+          </a>
+          <a class="tab-item" ng-click="jumpTo('app.list_loved_ones')">
+              <i class="icon ion-heart"></i>
+              Loved ones
+          </a>
+          <a class="tab-item" href="#">
+              <i class="icon ion-android-playstore"></i>
+              Store
+          </a>
+          <a class="tab-item" href="#">
+              <i class="icon ion-cash"></i>
+              Bills
+          </a>
+      </div>
+
+      <!-- header section end here -->
+
+      <div class="card list">
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">Name</span>
+              <input type="text" placeholder="Enter your name">
+          </label>
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">DOB</span>
+              <input type="text" placeholder="Date of birth">
+          </label>
+          <label class="item item-input">
+              <span class="input-label">Sex</span>
+              <div class="row">
+                  <div class="col">
+                      <input type="radio" ng-model="session_variables.gender" name="gender"
+                             value="Male">&nbsp; Male
+                  </div>
+                  <div class="col">
+                      <input type="radio" ng-model="session_variables.gender" name="gender"
+                             value="Female">&nbsp; Female
+                  </div>
+              </div>
+          </label>
+
+          <li class="item item-checkbox checkbox-balanced">
+              <label class="checkbox">
+                  <input type="checkbox">
+              </label>
+              Dependent
+          </li>
+
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">Email</span>
+              <input type="email" placeholder="Enter your email">
+          </label>
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">Mobile/Phone</span>
+              <input type="text" placeholder="Mobile/Phone">
+          </label>
+
+          <div class="item item-divider">
+              Access Authentication
+          </div>
+
+          <li class="item item-checkbox checkbox-balanced">
+              <label class="checkbox">
+                  <input type="checkbox">
+              </label>
+              Dependent
+          </li>
+
+          <li class="item item-checkbox checkbox-balanced">
+              <label class="checkbox">
+                  <input type="checkbox">
+              </label>
+              Dependent
+          </li>
+
+          <li class="item item-checkbox checkbox-balanced">
+              <label class="checkbox">
+                  <input type="checkbox">
+              </label>
+              Dependent
+          </li>
+
+          <li class="item item-checkbox checkbox-balanced">
+              <label class="checkbox">
+                  <input type="checkbox">
+              </label>
+              Dependent
+          </li>
+
+      </div>
+      <div class="list"></div>
+  </ion-content>
+</ion-view>

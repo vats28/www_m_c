@@ -1,0 +1,121 @@
+<ion-view view-title="{{ app_data.title }}">
+    <ion-content class="page-bg-color" ng-controller="favPresCtrl">
+        <!-- header section start here -->
+
+        <div class="item item-avatar">
+            <img src="img/hritik.jpg">
+
+            <h2>Ravi</h2>
+
+            <p>Age <span>24</span>, Sex <span>Male</span></p>
+
+            <p>1MedKey</p>
+
+            <!--<p>
+              <a href="#" class="subdued">Health Status Update</a>
+            </p>-->
+
+        </div>
+
+
+        <div  class="item tabs tabs-secondary  stable-bg tabs-icon-top" >
+           <!-- <div class="tabs">-->
+
+                <a class="tab-item active" href="#">
+                    <i class="icon ion-calendar"></i>
+                    My Favorite
+                </a>
+                <a class="tab-item" ng-click="jumpTo('app.list_loved_ones')">
+                    <i class="icon ion-heart"></i>
+                    Generics
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-android-playstore"></i>
+                    Brand
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-android-playstore"></i>
+                    Templates
+                </a>
+            <!--</div>-->
+        </div>
+        <div class="button-bar" style="width: 50%;margin: auto;">
+            <a class="button button-small  button-dark">Generics</a>
+            <a class="button button-small  assertive">Brand</a>
+        </div>
+        <!-- header section end here -->
+
+        <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+                <input type="text" placeholder="Search">
+            </label>
+            <button class="button button-small  icon ion-ios-search-strong"></button>
+        </div>
+
+        <div class="light-bg" align="center">
+            <div style="width:95%; font-weight: bold; padding: 5px; overflow: auto;">
+                <a class="button button-small button-outline" style="margin: 2px auto;"
+                   ng-repeat="item in pageVariable.alpha" item="item">{{item}}</a>
+            </div>
+        </div>
+
+
+        <div class="row" width="100%">
+
+            <ion-scroll class="col-67" direction="y" style="height: 300px">
+                <div class="row">
+                    <div class="col pad-5" align="center">
+                        <div class="light-bg pad-5">
+                            <b>Ondansetron</b>
+
+                            <p>Onset</p>
+                            <i class="ion ion-ionic" style="font-size: 30px"></i>
+
+                            <p class="ps">Cap 2mg <i class="ion ion-close pull-right dark-bg"></i></p>
+                        </div>
+                    </div>
+                    <div class="col pad-5" align="center">
+                        <div class="light-bg pad-5">
+                            <b>Ondansetron</b>
+
+                            <p>Onset</p>
+                            <i class="ion ion-ionic" style="font-size: 30px"></i>
+
+                            <p class="ps">Cap 2mg <i class="ion ion-close pull-right dark-bg"></i></p>
+                        </div>
+                    </div>
+               </div>
+                <div class="row">
+                    <div class="col pad-5" align="center">
+                        <div class="light-bg pad-5">
+                            <b>Ondansetron</b>
+
+                            <p>Onset</p>
+                            <i class="ion ion-ionic" style="font-size: 30px"></i>
+
+                            <p class="ps">Cap 2mg <i class="ion ion-close pull-right dark-bg"></i></p>
+                        </div>
+                    </div>
+                    <div class="col pad-5" align="center">
+                        <div class="light-bg pad-5">
+                            <b>Ondansetron</b>
+
+                            <p>Onset</p>
+                            <i class="ion ion-ionic" style="font-size: 30px"></i>
+
+                            <p class="ps">Cap 2mg <i class="ion ion-close pull-right dark-bg"></i></p>
+                        </div>
+                    </div>
+               </div>
+            </ion-scroll>
+
+            <ion-scroll  class="col-33" direction="y" style="height: 300px">
+                <div class="light-bg pad-5 margin-y" align="center"
+                     ng-repeat="item in pageVariable.alpha">
+                    mCURA
+                </div>
+            </ion-scroll>
+        </div>
+        <div class="list"></div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,54 @@
+<ion-view view-title="{{ app_data.title }}">
+  <ion-content class="page-bg-color" ng-controller="calendarEventsCtrl" >
+
+     <!-- header section start here -->
+    <div class="item item-avatar">
+      <img src="img/hritik.jpg">
+      <h2>Ravi</h2>
+      <p>Age <span>24</span>, Sex <span>Male</span></p>
+      <p>1MedKey</p>
+
+      <!--<p>
+        <a href="#" class="subdued">Health Status Update</a>
+      </p>-->
+    </div>
+
+    <div class="item tabs tabs-secondary  stable-bg tabs-icon-top">
+      <a class="tab-item" href="#">
+        <i class="icon ion-calendar" ng-click="jumpTo('app.calendar_events')"></i>
+        Calender
+      </a>
+      <a class="tab-item" ng-click="jumpTo('app.list_loved_ones')">
+        <i class="icon ion-heart"></i>
+        Loved ones
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-android-playstore"></i>
+        Store
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-cash"></i>
+        Bills
+      </a>
+    </div>
+
+      <!-- header section end here -->
+
+
+  </ion-content>
+<!--  <div class="bar bar-footer">
+  <button class="button button-clear">Left</button>
+  &lt;!&ndash;<div class="title">Add new event</div>&ndash;&gt;
+  <button class="title button button-clear">Add new event</button>
+  <button class="button button-clear">Right</button>
+</div>-->
+
+  <div class="tabs tabs-icon-left footer_tab ">
+
+    <a class="tab-item" nav-clear menu-close ng-click="doLogout()">
+      <i class="icon ion-log-out"></i>
+      <span>Add New Event</span>
+    </a>
+
+  </div>
+</ion-view>

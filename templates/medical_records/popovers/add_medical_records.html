@@ -1,0 +1,53 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Add Medical Record</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeAddMedRecModel()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content ng-controller="add_mediRecCtrl">
+
+
+    <div class="card list" >
+
+      <div class="item tabs tabs-secondary  stable-bg tabs-icon-top">
+        <a class="tab-item"  >
+          <i class="icon ion-ios-camera"></i>
+          Capture Image
+        </a>
+        <a class="tab-item" >
+          <i class="icon ion-ios-videocam"></i>
+          Capture Video
+        </a>
+      </div>
+    </div>
+
+    <div class="card list" >
+
+      <div class="item tabs tabs-secondary  stable-bg tabs-icon-top">
+        <a class="tab-item"  >
+          <i class="icon ion-music-note"></i>
+          Record Audio
+        </a>
+        <a class="tab-item" >
+          <i class="icon ion-ios-upload"></i>
+          Upload File
+        </a>
+      </div>
+    </div>
+
+    <div class="card list" >
+
+      <div class="item tabs tabs-secondary  stable-bg tabs-icon-top">
+        <a class="tab-item"  >
+          <i class="icon ion-android-textsms"></i>
+          Text Written
+        </a>
+        <a class="tab-item" >
+          <i class="icon ion-bag"></i>
+          Data
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>
